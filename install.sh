@@ -42,6 +42,13 @@ if [ -f /etc/arch-release ]; then
     exit
   fi
   yay -S neovim python-pip bpytop zsh git tmux fzf bat fd ripgrep tldr ulauncher
+# if ubuntu or debian
+if [ -f /etc/debian_version ]; then
+  sudo apt install neovim python3-pip bpytop zsh git tmux fzf bat fd-find ripgrep tldr ulauncher
+fi
+if [ -f /etc/fedora-release ]; then
+  sudo dnf install neovim python3-pip bpytop zsh git tmux fzf bat fd-find ripgrep tldr ulauncher
+fi
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda3 -b

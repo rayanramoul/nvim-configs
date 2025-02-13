@@ -1,6 +1,13 @@
+[commit]
+	template = ~/commit-template.txt
 [user]
-	name = Your Name
-	email = e.mail@instadeep.com
+	name = rayanramoul
+	email = r.ramoul@instadeep.com
+[core]
+	editor = nvim
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 
 [alias]
 	co = checkout
