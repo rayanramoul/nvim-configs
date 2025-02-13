@@ -24,11 +24,11 @@ display_ascii_art
 
 git clone --recursive https://github.com/rayanramoul/RayTerm.git ~/RayTerm
 # cd into RayTerm
-cd ~/RayTerm
+cd ~/RayTerm/dotfiles
 
 # copy dotfiles from RayTerm/dotfiles to ~
 # cp -r dotfiles/.* ~
-stow -t $HOME -R dotfiles --override=.*
+stow -v -t ~ dotfiles
 
 
 # reminders on what to install

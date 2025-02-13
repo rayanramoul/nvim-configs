@@ -1,4 +1,0 @@
---dir=dotfiles
---target=$HOME
---dotfiles
---ignore=.stowrc

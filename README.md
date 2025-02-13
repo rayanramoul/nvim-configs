@@ -39,8 +39,8 @@ If you only want to check the dotfiles you can get them at this link : [Dotfiles
 
 ```bash
 git clone --recurse-submodules  https://github.com/rayanramoul/RayTerm/
-cd RayTerm
-stow -t $HOME -R dotfiles
+cd RayTerm/dotfiles
+stow -v -t ~ dotfiles
 ```
 
 Or if you want a minimal setup for a server (only copy dotfiles) you can run the following command :
