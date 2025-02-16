@@ -15,6 +15,13 @@ return {
   },
   keys = {
     {
+      "<leader>gx",
+      function()
+        Snacks.picker.git_branches({layout = "select"})
+      end,
+      desc = "Pick Git Branch"
+    }
+    {
       "<leader>,",
       function()
         Snacks.picker.buffers()
