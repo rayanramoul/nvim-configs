@@ -17,10 +17,10 @@ return {
     {
       "<leader>gx",
       function()
-        Snacks.picker.git_branches({layout = "select"})
+        Snacks.picker.git_branches({ layout = "select" })
       end,
-      desc = "Pick Git Branch"
-    }
+      desc = "Pick Git Branch",
+    },
     {
       "<leader>,",
       function()
@@ -287,8 +287,6 @@ return {
       end,
       desc = "LSP Symbols",
     },
-  },
-  keys = {
     {
       "<leader>,",
       function()
